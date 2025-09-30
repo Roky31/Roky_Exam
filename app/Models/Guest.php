@@ -9,7 +9,7 @@ class Guest extends Model
 {
     use HasFactory;
 
-        public function bookings(){
+        public function booking(){
         return $this->hasMany(Booking::class);
     }
 }

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class City extends Model
 {
-    public function bookings(){
+    public function booking(){
         return $this->hasMany(Booking::class);
     }
 }

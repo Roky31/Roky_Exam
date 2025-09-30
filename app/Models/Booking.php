@@ -9,16 +9,16 @@ class Booking extends Model
 {
     use HasFactory;
 
-    public function cities(){
+    public function city(){
         return $this->belongsTo(City::class);
     }
-        public function hotels(){
+        public function hotel(){
         return $this->belongsTo(Hotel::class);
     }
-        public function rooms(){
+        public function room(){
         return $this->belongsTo( Room::class);
     }
-        public function guests(){
+        public function guest(){
         return $this->belongsTo( Guest::class);
     }
 }
