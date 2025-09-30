@@ -16,8 +16,13 @@ class GuestFactory extends Factory
      */
     public function definition(): array
     {
+        $passportid = rand(100000,999999);
+        $firstname = fake()->words(1, true);
+        $lastname =  fake()->words(1, true);
         return [
-            //
+            "firstname"=> $firstname,
+            "lastname"=> $lastname,
+            'passport_number' => $passportid,
         ];
     }
 }

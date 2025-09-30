@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('hotel_id')->constrained()->cascadeOnDelete();
             $table->string('room_number');
-            $table->enum('single', ['double','suite','vip','deluxe']);
+            $table->enum('type', ['single','double','suite','vip','deluxe'])->default('single');
             $table->float('per_night_price');
             $table->boolean('is_available');
             $table->timestamps();
