@@ -9,6 +9,16 @@ class Booking extends Model
 {
     use HasFactory;
 
+    protected $guarded = [
+        'id'
+    ];
+    protected $fillable = [
+        'room_id',
+        'guest_id',
+        'check_in_at',
+        'check_in_out',
+    ];
+
     public function city(){
         return $this->belongsTo(City::class);
     }

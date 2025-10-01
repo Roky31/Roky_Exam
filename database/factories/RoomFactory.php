@@ -21,17 +21,18 @@ class RoomFactory extends Factory
         $roomnumberid = rand(100,999);
         $type = fake()->randomElement(['single','double','suite','vip','deluxe']);
         $price = 0;
-            if ('type'==='single') {
+            if ($type =='single') {
                 $price = 500;
-            } elseif ('type'=== 'double') {
+            } elseif ($type == 'double') {
                 $price = 700;
-            } elseif ('type'=== 'suite') {
+            } elseif ($type == 'suite') {
                 $price = 1000;
-            } elseif ('type'=== 'vip') {
+            } elseif ($type == 'vip') {
                 $price = 1400;
-            } elseif ('type'=== 'deluxe') {
+            } elseif ($type == 'deluxe') {
                 $price = 2000;
-            }
+            };
+            
         $isavailable = fake()->boolean(90);
         return [
             "hotel_id"=> $hotelid,

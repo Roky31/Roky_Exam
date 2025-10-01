@@ -9,6 +9,19 @@ class Hotel extends Model
 {
     use HasFactory;
 
+    protected $guarded = [
+        'id'
+    ];
+
+    protected $fillable = [
+        'city_id',
+        'name',
+        'address',
+        'phone',
+        'email',
+        'star' ,
+    ];
+
         public function booking(){
         return $this->hasMany(Booking::class);
     }

@@ -9,6 +9,15 @@ class Guest extends Model
 {
     use HasFactory;
 
+    protected $guarded = [
+        'id'
+    ];
+
+    protected $fillable = [
+        "firstname",
+        "lastname",
+        "passport_number",
+    ];
         public function booking(){
         return $this->hasMany(Booking::class);
     }

@@ -21,6 +21,7 @@ class HotelFactory extends Factory
     {
         $cityId = City::inRandomOrder()->first();
         $starid = rand(1, 5);
+        $phoneid = rand(99361000000, 99365999999);
         $name = fake()->company();
         $address = fake()->address() . ' ' . fake()->country();
         $email = fake()->email();
@@ -28,7 +29,7 @@ class HotelFactory extends Factory
             'city_id' => $cityId,
             'name' => $name,
             'address' => $address,
-            'phone' => fake()->phone(),
+            'phone' =>'+'. $phoneid,
             'email' => $email,
             'star' => $starid,
         ];

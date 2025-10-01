@@ -21,12 +21,12 @@ class BookingFactory extends Factory
     {
         $roomid = Room::inRandomOrder()->first();
         $guestid = Guest::inRandomOrder()->first();
-        $birthDate= fake()->dateTimeBetween('-7 days', 'now');
-        $checkinout = fake()->boolean(50) ? fake()->dateTimeBetween($birthDate, 'now') : null;
+        $checkinat= fake()->dateTimeBetween('-7 days', 'now');
+        $checkinout = fake()->boolean(50) ? fake()->dateTimeBetween($checkinat, 'now') : null;
         return [
-            "room_id" => $roomid,
-            "guest_id" => $guestid,
-            'check_in_at' => $birthDate,
+            'room_id' => $roomid,
+            'guest_id' => $guestid,
+            'check_in_at' => $checkinat,
             'check_in_out' => $checkinout,
         ];
     }
