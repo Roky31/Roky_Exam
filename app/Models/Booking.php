@@ -19,16 +19,10 @@ class Booking extends Model
         'check_in_out',
     ];
 
-    public function city(){
-        return $this->belongsTo(City::class);
-    }
-        public function hotel(){
-        return $this->belongsTo(Hotel::class);
-    }
-        public function room(){
+        public function rooms(){
         return $this->belongsTo( Room::class);
     }
-        public function guest(){
+        public function guests(){
         return $this->belongsTo( Guest::class);
     }
 }

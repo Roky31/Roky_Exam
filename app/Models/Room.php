@@ -21,7 +21,10 @@ class Room extends Model
     'per_night_price',
     'is_available',
     ];
-       public function booking(){
-        return $this->hasMany(Booking::class);
+       public function hotels(){
+        return $this->belongsTo(Hotel::class);
     }
+    public function bookings(){
+        return $this->hasMany(Booking::class);
+}
 }

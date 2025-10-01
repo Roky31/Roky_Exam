@@ -13,8 +13,8 @@ protected $guarded = [
     protected $fillable = [
         'name',
     ];
-    public function booking(){
+    public function hotels(){
 
-        return $this->hasMany(Booking::class);
+        return $this->hasMany(Hotel::class);
     }
 }

@@ -22,7 +22,10 @@ class Hotel extends Model
         'star' ,
     ];
 
-        public function booking(){
-        return $this->hasMany(Booking::class);
+        public function cities(){
+        return $this->belongsTo(City::class);
+    }
+        public function rooms(){
+        return $this->hasMany( Room::class);
     }
 }

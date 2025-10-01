@@ -18,7 +18,7 @@ class Guest extends Model
         "lastname",
         "passport_number",
     ];
-        public function booking(){
+        public function bookings(){
         return $this->hasMany(Booking::class);
     }
 }
