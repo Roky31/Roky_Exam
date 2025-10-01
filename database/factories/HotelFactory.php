@@ -29,7 +29,7 @@ class HotelFactory extends Factory
             'city_id' => $cityId,
             'name' => $name,
             'address' => $address,
-            'phone' =>'+'. $phoneid,
+            'phone' => $phoneid,
             'email' => $email,
             'star' => $starid,
         ];
