@@ -1,0 +1,29 @@
+.bg-image {
+    background-image: url("../img/banner-bg.jpg");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-opacity {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* .bg-gradient {
+    background-image: radial-gradient(circle, #eeeeee, #ebebeb, #e8e8e8, #e6e6e6, #e3e3e3, #dfdfdf, #dbdbdb, #d7d7d7, #d0d0d0, #cacaca, #c3c3c3, #bdbdbd);
+} */
+
+.bg-blur {
+    background-color: rgba(0, 0, 0, 0.157);
+    backdrop-filter: blur(16px);
+}
+.bg-image-2 {
+    background-image: url("../img/pricing-bg.jpg");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+}
